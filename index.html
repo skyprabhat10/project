@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.toysrus.in</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            outline: 0px;
+        }
+        .maincont{
+            width: 100%;
+        }
+        .nav1{
+            width: 100%;
+            height: 5vh;
+            background-color: rgb(226, 20, 54);
+            text-align: center;
+            
+        }
+        .nav1>p{
+            color: white;
+            padding-top: 5px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .nav2{
+            width: 100%;
+            height: 15vh;
+            display: flex;
+        }
+        .nav2>img{
+            margin-top: 17px;
+            width: 370px;
+            height: 60px;
+        }
+        
+        .search{
+            margin-left: 270px;
+            padding-right: 10px;
+            border: 1px solid rgb(173, 173, 173);
+            border-radius: 5px;
+            height: 30px;
+            margin-top: 34px;
+            padding-left: 10px;
+        }
+        .search>input{
+            
+            font-size: 15px;
+            margin-top: 7px;
+            border: none;
+            width: 220px;
+
+        }
+        .fa-magnifying-glass{
+            color: rgb(158, 169, 228);
+        }
+        .fa-face-smile:hover{
+            color: rgb(13, 172, 235);
+        }
+        .fa-heart:hover
+        {
+            color: rgb(13, 172, 235);
+        }
+        .fa-cart-shopping:hover{
+            color: rgb(13, 172, 235);
+        }
+        .icons{
+            margin-left: 250px;
+            font-size: 25px;
+            margin-top: 30PX;
+            word-spacing: 10PX;
+        }
+        .nav3{
+            display: flex;
+            background-color: blue;
+            height: 7vh;
+        }
+        .nav3>a{
+            color: white;
+            text-decoration: none;
+            margin-left: 10%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            margin-top: 12px;
+        }
+        .background>img{
+            margin-top:2px ;
+            padding-left: 5%;
+            width: 90%;
+            height: 79vh;
+            background-repeat: no-repeat;
+            background-size: 80% 80%;
+            background-position: top center;
+            z-index: 1;
+         }
+         .nextpage{
+            width: 100%;
+            height: 78vh;
+            background-color: rgb(255, 255, 255);
+        }
+        .una{
+            width: 90%;
+            background-color: rgb(236, 234, 234);
+            display: flex;
+            justify-content: left;
+            margin-left: 5%;
+        }
+        .una>img{
+            padding-left: 1.5%;
+        }
+        .una>p{
+            font-weight: bolder;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(10, 153, 236);
+            margin-top: 10px;
+            
+        }
+        .mco{
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 90%;
+            height: 60vh;
+            margin-left: 4.7%;
+
+            
+         }
+
+        
+
+
+
+
+         .c1{
+            width: 30%;
+            height:25vh;
+            border: 1px solid rgb(228, 228, 228);
+            border-radius: 6px;
+            color: rgb(248, 85, 112);
+            text-align: center;
+            font-size: 25px;
+            font-weight: 600;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            
+
+              
+         }
+         .c1>p{
+            margin-top: 45px;
+         }
+         .c2>p{
+            margin-top: 45px;
+         }
+         .c3>p{
+            margin-top: 45px;
+         }
+         .c4>p{
+            margin-top: 45px;
+         }
+         .c5>p{
+            margin-top: 45px;
+         }
+         .c6>p{
+            margin-top: 45px;
+         }
+         .c2{
+            width: 30%;
+            height:25vh;
+            border: 1px solid rgb(228, 228, 228);
+            border-radius: 6px;
+            text-align: center;
+            color: purple;
+            font-size: 25px;
+            font-weight: 600;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+              
+         }
+         .c3{
+            width: 30%;
+            height:25vh;
+            border: 1px solid rgb(228, 228, 228);
+            border-radius: 6px;
+            text-align: center;
+            color: green;
+            font-size: 25px;
+            font-weight: 600;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+           
+              
+         }
+         .c4{
+            width: 30%;
+            height:25vh;
+            border: 1px solid rgb(228, 228, 228);
+            border-radius: 6px;
+            text-align: center;
+            color: orange;
+            font-size: 25px;
+            font-weight: 600;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+              
+         }
+         .c5{
+            width: 30%;
+            height:25vh;
+            border: 1px solid rgb(228, 228, 228);
+            border-radius: 6px;
+            text-align: center;
+            color:rgb(18, 199, 245);
+            font-size: 25px;
+            font-weight: 600;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+              
+         }
+         .c6{
+            width: 30%;
+            height:25vh;
+            border: 1px solid rgb(228, 228, 228);
+            border-radius: 6px;
+            text-align: center;
+            color: orangered;
+            font-size: 25px;
+            font-weight: 600;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+              
+         }
+         .c1:hover{
+            background-color:rgb(248, 85, 112) ;
+            color: white;
+         }
+         .c2:hover{
+            background-color:purple ;
+            color: white;
+         }
+         .c3:hover{
+            background-color:green;
+            color: white;
+         }
+         .c4:hover{
+            background-color:orange;
+            color: white;
+         }
+         .c5:hover{
+            background-color:rgb(18, 199, 245) ;
+            color: white;
+         }
+         .c6:hover{
+            background-color:orangered;
+            color: white;
+         }
+
+
+         .tco{
+            display: flex;
+            justify-content:space-around;
+            padding-right: 70px;
+            flex-wrap: wrap;
+
+
+         }
+
+         .p1{
+            width: 22%;
+            height:35vh;
+            margin-left: 62px;
+            margin-top: 20px;
+            border: 1px solid rgb(228, 228, 228);
+            background-image:url("t1.jpg");
+            background-size: 100% 100%;
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+        .p2{
+            width: 22%;
+            height:35vh;
+            
+            margin-left: 62px;
+            margin-top: 20px;
+            border: 1px solid rgb(228, 228, 228);
+            background-image:url("t2.jpg") ;
+            background-size: 100% 100%;
+            border-radius: 5px;
+            background-color:rgb(205, 219, 205);
+        }
+
+        .p3{
+            width: 22%;
+            height:35vh;
+            margin-left: 62px;
+            margin-top: 20px;
+            border: 1px solid rgb(228, 228, 228);
+            background-color:rgb(208, 224, 224);
+            background-image:url("t3.jpg");
+            background-size: 100% 100%;
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+        .p4{
+            width: 22%;
+            height:35vh;
+            margin-left: 62px;
+            margin-top: 20px;
+            border: 1px solid rgb(228, 228, 228);
+            background-color:rgb(224, 236, 236);
+            background-image:url("t4.jpg");
+            background-size: 100% 100%;
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+
+        .p5{
+            width: 22%;
+            height:35vh;
+            margin-left: 62px;
+            margin-top: 20px;
+            border: 1px solid rgb(228, 228, 228);
+            background-color:rgb(224, 236, 236);
+            background-image:url("t5.jpg");
+            background-size: 100% 100%;
+            border: 2px solid gray;
+            border-radius: 5px;
+
+        } 
+         .p6{
+            width: 22%;
+            height:35vh;
+            margin-left: 62px;
+            margin-top: 20px;
+            border: 1px solid rgb(228, 228, 228);
+            background-color:rgb(224, 236, 236);
+            background-image:url("t6.jpg");
+            background-size: 100% 100%;
+            border: 2px solid gray;
+            border-radius: 5px;
+        }
+
+
+        .footer{
+            width: 100%;
+            margin-top: 20px;
+            
+        }
+        .na1{
+            width: 100%;
+            height: 30vh;
+            background-color: rgb(17, 36, 206);
+            text-align: center;
+            
+        }
+        .na1{
+            line-height: 70px;
+        }
+        .na1>p{
+            font-size: 30px;
+            color: white;
+        }
+        #inna1 input{
+            width: 30%;
+            height: 5vh;
+            border-radius: 4px;
+            border: 1px solid black;
+
+        }
+        #inna1 button{
+            width: 10%;
+            height: 5.7vh;
+            border: 1px solid black;
+            border-radius: 4px;
+            font-weight:bolder;
+            color: white;
+            background-color: orangered;
+        }
+        .na2{
+            line-height: 30px;
+            display: flex;
+            margin-top: 20px;
+            margin-left: 120px;
+            
+        }
+        .co2{
+            margin-left: 300px;
+        }
+        .co3{
+            margin-left: 300px;
+        }
+        .na3{
+            width: 100%;
+            height: 40vh;
+            text-align: center;
+            background-color: blue;
+            line-height: 20px;
+           
+           
+            
+        }
+        .na3>i{
+            margin-top:  40px;
+        }
+        .fa-brands{
+            background-color: white;
+            text-align: center;
+            width: 45px;
+            height: 36px;
+            color: blue;
+            font-size: 30px;
+            border-radius: 80%;
+               margin-left: 20px;
+
+        }
+        .na3>p{
+            margin-top: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: 700;
+            color: white;
+
+        }
+        
+ 
+   
+
+    </style>
+    <script>
+        i=0
+        let a=["https://th.bing.com/th/id/OIP.HFrOxyep7A0UTZyiNQBkqAHaE8?pid=ImgDet&rs=1","https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+                'https://images.unsplash.com/photo-1618842676088-c4d48a6a7c9d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
+                'https://images.unsplash.com/photo-1558060370-d644479cb6f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80',
+                'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60',
+                'https://th.bing.com/th/id/OIP.rAHeTgvIxn7923eJ48-Z0AHaEK?w=265&h=180&c=7&r=0&o=5&pid=1.7']
+     function fun()
+        {
+            let iref=document.getElementById("im1")
+            i++
+            if(i>=a.length)
+            {
+                i=0
+            }
+            iref.src=a[i]
+        }
+        
+        setInterval(fun,2000)
+
+    </script>
+
+
+</head>
+<body>
+    <div class="maincont">
+        <div class="nav1">
+           <p>Same Day Delivery and Next Day Delivery available*. | Free Home Delivery Rs.999 and Above</p>
+        </div>
+        <div class="nav2">
+              <img src="https://www.toysrus.in/static/frontend/Aceturtle/toysrus/en_US/images/logo.svg"/>
+              <div class="search"><input type="search" placeholder="Search for products & Category "/><i class="fa-solid fa-magnifying-glass"></i></div>
+              <div class="icons"><i class="fa-solid fa-face-smile"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="nav3">
+                <a href="#">Shop By Offer</a>
+                <a href="#">Shop by Category</a>
+                <a href="#">Shop By Ag</a>
+                <a href="#">Shop By Brand</a>
+                <a href="#">Shop By Charecters</a>
+            </div>
+            
+            
+            
+            
+               
+
+        </div>
+        <div class="background">
+        <img src="apr1.webp" id="im1"/>
+    </div>
+    <div class="nextpage">
+        <div class="una">
+           <img src="img4.png" /> 
+         <p>SHOP BY AGE</p>
+       
+        </div>
+        <div class="mco">
+            <div class="c1"><p>0-12<br/>Months</p></div>
+            <div class="c2"><p>12-24<br/>Months</p></div>
+            <div class="c3"><p>2-5<br/>Years</p></div>
+            <div class="c4"><p>5-8<br/>Years</p></div>
+            <div class="c5"><p>8-12<br/>Years</p></div>
+            <div class="c6"><p>12+<br/>Years</p></div>
+       </div>
+       
+    </div>
+    <div class="thirdpage">
+        <div class="una">
+            <img src="img4.png" /> 
+          <p>SHOP BY CATEGORY</p>
+        
+         </div>
+
+
+         <div class="tco">
+            <div class="p1"></div>
+            <div class="p2"></div>
+            <div class="p3"></div>
+            <div class="p4"></div>
+            <div class="p5"></div>
+            <div class="p6"></div>
+           
+         </div>
+    </div>
+    <div class="footer">
+             <div class="na1">
+                    <p>Sing up for email updates!</p>
+                   <lable id="inna1"><input type="email" placeholder="Enter Your Emsil Address" /> <button>SUBSCRIBE</button></lable> 
+             </div>
+             <div class="na2">
+                   <div class="co1"><h3>ACCOUNT</h3>
+                    <p>My Account</p>
+                    <p>Track Order</p>
+                    <p>My Orders</p>
+                    <p>Pricematch</p>
+                    <p>Blogs</p>
+                </div>
+                <div class="co2"><h3>HELP</h3>
+                    <p>Contact Us</p>
+                    <p>FAQ</p>
+                    <p>Shipping And Delivery</p>
+                    <p>Exchanges And Return</p>
+                    
+                </div>
+                <div class="co3"><h3>COMPANY</h3>
+                    <p>About Us</p>
+                    <p>Privecy Policy</p>
+                    <p>Terms And Condition</p>
+                </div>
+             </div>
+             <div class="na3">
+                <i class="fa-brands fa-instagram"></i><i class="fa-brands fa-facebook-f"></i><i class="fa-brands fa-youtube"></i><i class="fa-brands fa-twitter"></i>
+                  <p>
+                    Use of this site signifies your acceptance of Toys”R”Us Website Terms and Conditions and Privacy Policy.<br/>
+                    TOYS R US®, BABIES R US® and their associated logos are trademarks owned by TRU KIDS, INC., used herein under license.<br/>
+                    © 2022. All rights reserved</p>
+             </div>
+    </div>
+
+    
+    </div>
+</body>
+</html>
